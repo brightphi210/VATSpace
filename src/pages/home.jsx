@@ -19,10 +19,10 @@ import Rating from "../components/home_components/rating"
 import Affiliate from "../components/home_components/affiliate"
 import Footer from "../components/home_components/footer"
 
+// howfa
 
-
-const Home = () =>{
-    return(
+const Home = () => {
+    return (
         <div>
             <Header />
             <BodyOne />
