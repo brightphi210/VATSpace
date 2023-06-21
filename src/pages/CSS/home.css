@@ -176,14 +176,14 @@ header ul li:hover{
 }
 
 .body_text h2{
-    font-family: var(--main-font);
+    /* font-family: var(--main-font); */
     font-weight: 700;
     font-size: var(--big-font);
     color: var(--black-color);
 }
 
 .body_text .ease{
-    font-family: 'Syne', sans-serif;
+    /* font-family: 'Syne', sans-serif; */
     font-weight: 700;
     font-size: 80px;
     color: var(--blue-color);

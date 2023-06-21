@@ -59,7 +59,6 @@
     background-size: cover;
     inset: 0;
     opacity: 0.4;
-    /* animation: bgchange 20s linear infinite; */
 }
 
 
@@ -111,16 +110,16 @@
 
 
 
-.input_map{
+/* .input_map{
     display: flex;
     gap: 10px;
     margin-top: 50px;
     justify-content: center;
 }
+ */
 
 
-
-select {
+.minimalOne {
 
     background-color: white;
     border: solid rgb(187, 187, 187) 1px;
@@ -143,7 +142,7 @@ select {
   
   
   
-  select.minimal {
+  select.minimalOne {
     background-image:
       linear-gradient(45deg, transparent 50%, gray 50%),
       linear-gradient(135deg, gray 50%, transparent 50%),
@@ -159,7 +158,7 @@ select {
     background-repeat: no-repeat;
   }
   
-  select.minimal:focus {
+  select.minimalOne:focus {
     background-image:
       linear-gradient(45deg, rgb(8, 128, 197) 50%, transparent 50%),
       linear-gradient(135deg, transparent 50%, rgb(8, 128, 197) 50%),
@@ -178,7 +177,15 @@ select {
   }
   
 
-  .input_map button{
+  .input_map_one{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+  }
+
+
+  .input_map_one button{
     padding: 10px 30px;
     background-color: var(--blue-color);
     border-radius: 10px;
@@ -187,7 +194,7 @@ select {
     cursor: pointer;
   }
 
-  .input_map button:hover{
+  .input_map_one button:hover{
     background-color: var(--dark-blue-color);
     transition: all ease-in-out 0.5s;
   }
@@ -196,13 +203,16 @@ select {
   
 .map2{
     position: relative;
+    z-index: 3;
+    isolation: isolate;
 }
 
 
-.uil-map-marker-alt{
+.location_icon{
     position: absolute;
     top: 8px;
-    left: 17px;
+    right: 0;
+    
 }
 
 .map2 input{
@@ -212,4 +222,86 @@ select {
     padding-left: 50px;
     outline: none;
     width: 100%;
+}
+
+
+
+/* ============================= services sectons ==================== */
+.service_section{
+  padding: 100px 12%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding-bottom: 20px;
+}
+
+.services_single{
+  background-color: var(--white-color);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  cursor: pointer;
+  border-radius: 20px ;
+}
+
+
+.services_single:hover{
+  transform: translate(0, -10px);
+  transition: all 0.5s ease-in-out;
+}
+
+.services_single .img_class{
+  width: 100%;
+  height: 200px;
+  border-radius: 2;
+  border-radius: 20px 20px 0 0;
+}
+
+.inside_service_single{
+  padding: 20px;
+}
+
+.inside_service_single h3{
+  font-size: 15px;
+}
+
+
+
+.service_profile_flex{
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.service_profile_flex p{
+  font-size: 10px;
+}
+
+.service_profile_flex h4{
+  color: grey;
+}
+
+.service_profile_flex img{
+  width: 13%;
+} 
+
+
+.button_section{
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 13px 40px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button_section:hover{
+  background-color: var(--dark-blue-color);
+  transition: all ease-in-out 0.5s;
 }
