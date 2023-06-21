@@ -1,0 +1,215 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-family: Lato;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --small-font: 14px;
+    --big-font:80px;
+    --medium-font:40px;
+    --icon-size: 20px;
+    --main-font:'Syne', sans-serif;
+
+
+
+    --white-color:white;
+    --white-grey:rgb(248, 248, 248);
+    --blue-color:#017EFE;
+    --red-color:#e40a0a;
+    --yello-color:#ffbd09;
+    --green-color:#0c942e;
+    --black-color:black;
+    --dark-blue-color: #0c5aa7;
+
+}
+
+
+
+
+/* ==================== main body ===================== */
+
+.body_one{
+    display: grid;
+    height: 80vh;
+    width: 100%;
+    position: relative;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-top: 0;
+}
+
+
+
+.body_one::before{
+    background-image:url(services_background.png);
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+    inset: 0;
+    opacity: 0.4;
+    /* animation: bgchange 20s linear infinite; */
+}
+
+
+.body_one h2, button, p, input, select{
+    isolation: isolate;
+}
+
+.body_one h2{
+    font-size: 60px;
+    padding-top: 50px;
+}
+
+
+.body_one p{
+    font-size: 30px;
+}
+
+.all_button_flex{
+    
+}
+
+.body_one .button_flex{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.button_flex button{
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.button_flex .active{
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button_flex input{
+    padding-left: 20px;
+    border: var(--blue-color) 2px solid;
+    border-radius: 10px;
+}
+
+
+
+.input_map{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+
+select {
+
+    background-color: white;
+    border: solid rgb(187, 187, 187) 1px;
+    border-radius: 10px;
+    display: inline-block;
+    font: inherit;
+    line-height: 1.5em;
+    padding: 0.5em 4.5em 0.5em 2em;
+  
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+
+  
+  
+  
+  select.minimal {
+    background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.minimal:focus {
+    background-image:
+      linear-gradient(45deg, rgb(8, 128, 197) 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, rgb(8, 128, 197) 50%),
+      linear-gradient(to right, #ccc, #ccc);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      calc(100% - 2.5em) 0.5em;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1px 1.5em;
+    background-repeat: no-repeat;
+    border: solid rgb(187, 187, 187) 1px;
+    outline: 0;
+  }
+  
+
+  .input_map button{
+    padding: 10px 30px;
+    background-color: var(--blue-color);
+    border-radius: 10px;
+    border: none;
+    color: var(--white-color);
+    cursor: pointer;
+  }
+
+  .input_map button:hover{
+    background-color: var(--dark-blue-color);
+    transition: all ease-in-out 0.5s;
+  }
+
+
+  
+.map2{
+    position: relative;
+}
+
+
+.uil-map-marker-alt{
+    position: absolute;
+    top: 8px;
+    left: 17px;
+}
+
+.map2 input{
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: var(--blue-color) solid 2px;
+    padding-left: 50px;
+    outline: none;
+    width: 100%;
+}
