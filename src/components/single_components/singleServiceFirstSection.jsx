@@ -124,6 +124,8 @@ const SingleServiceFirstSection = () =>{
                 </div>
             </section>
 
+        
+        {/* ================ property pages ============= */}
             
             <section className="single_property_general">
                 <h5 className="nearby_space">NEARBY SPACES</h5>
