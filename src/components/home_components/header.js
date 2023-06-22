@@ -18,7 +18,7 @@ const Header = () => {
 
                     <li className="company">Product <i className="uil uil-angle-down"></i>
                         <ul className="company_ul">
-                            <li><i className="uil uil-building icon"></i> Phyical</li>
+                            <Link to={"/physical"}><li><i className="uil uil-building icon"></i> Phyical</li></Link>
                             <li><i className="uil uil-wallet icon"></i> NFT</li>
                         </ul>
                     </li>

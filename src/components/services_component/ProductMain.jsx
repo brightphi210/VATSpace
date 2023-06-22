@@ -10,12 +10,12 @@ import profileThree3 from "./service_images/Profile-2.png"
 import { Link } from "react-router-dom"
 
 
-const ServiceMain = () =>{
+const PhysicalProductMain = () =>{
     return(
         <div>
             <section className="service_section">
 
-                <Link to={"/singleService"}>
+                <Link to={"/singlePhysicalProduct"}>
                 <div className="services_single">
                     <img src={pics1} alt="" className="img_class" />
                     <div className="inside_service_single">
@@ -197,4 +197,4 @@ const ServiceMain = () =>{
     )
 }
 
-export default ServiceMain
+export default PhysicalProductMain

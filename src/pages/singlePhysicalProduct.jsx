@@ -1,11 +1,11 @@
 
 
-import "./CSS/single_services.css"
+import "./CSS/single_physical_product.css"
 
 import SingleServiceFirstSection from "../components/single_components/singleServiceFirstSection"
 import Footer from "../components/home_components/footer"
 import Header from "../components/home_components/header"
-const SingleService = () =>{
+const SinglePhysicalProduct = () =>{
     return(
         <div>
             <Header />
@@ -15,4 +15,4 @@ const SingleService = () =>{
     )
 }
 
-export default SingleService
+export default SinglePhysicalProduct    

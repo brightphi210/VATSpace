@@ -1,5 +1,5 @@
 
-const ServiceBodyOne = () => {
+const PhysicalProductBodyOne = () => {
     return (
         <div>
             <section className="body_one">
@@ -37,4 +37,4 @@ const ServiceBodyOne = () => {
     )
 }
 
-export default ServiceBodyOne
+export default PhysicalProductBodyOne
