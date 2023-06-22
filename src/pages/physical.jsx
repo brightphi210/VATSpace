@@ -2,8 +2,8 @@
 import "./CSS/physical.css"
 
 
-import PhysicalProductBodyOne from "../components/services_component/ProductBodyOne"
-import PhysicalProductMain from "../components/services_component/ProductMain"
+import PhysicalProductBodyOne from "../components/product_components/ProductBodyOne"
+import PhysicalProductMain from "../components/product_components/ProductMain"
 
 import Header from "../components/home_components/header"
 import Footer from "../components/home_components/footer"

@@ -1,11 +1,11 @@
 
-import pics1 from "./service_images/caro1.png"
-import pics2 from "./service_images/caro2.png"
-import pics3 from "./service_images/caro3.png"
+import pics1 from "./product_images/caro1.png"
+import pics2 from "./product_images/caro2.png"
+import pics3 from "./product_images/caro3.png"
 
-import profileOne1 from "./service_images/Profile.png"
-import profileTwo2 from "./service_images/Profile-1.png"
-import profileThree3 from "./service_images/Profile-2.png"
+import profileOne1 from "./product_images/Profile.png"
+import profileTwo2 from "./product_images/Profile-1.png"
+import profileThree3 from "./product_images/Profile-2.png"
 
 import { Link } from "react-router-dom"
 

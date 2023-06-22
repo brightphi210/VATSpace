@@ -3,6 +3,9 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Physical from "./pages/physical";
 import Contact from "./pages/contact";
+import Service from "./pages/service";
+
+
 import SinglePhysicalProduct from "./pages/singlePhysicalProduct";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,7 +18,8 @@ function App() {
       <Routes>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
-        {/* <Route path="services" element={<Services />} /> */}
+
+        <Route path="services" element={<Service />} />
         <Route path="contact" element={<Contact />} />
 
         <Route path={"physical"} element={<Physical />}></Route>
