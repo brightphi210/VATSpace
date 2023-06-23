@@ -102,3 +102,40 @@
     gap: 45px;
     padding: 8vw 0;
 }
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--white-color);
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+.service:hover{
+    cursor: pointer;
+    transform: translate(0, -10px);
+    transition: all 0.5s ease;
+}
+.service div{
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--dark-blue-color);
+    margin-bottom: 15px;
+}
+.service div i{
+    font-size: 22px;
+    color: gold;
+}
+.service h2{
+    font-size: 22px;
+    color: var(--dark-blue-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.service p{
+    color: var(--dark-grey-color);
+    font-weight: 500;
+}

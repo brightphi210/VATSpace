@@ -1,8 +1,17 @@
+import "./CSS/contact.css"
 
-const Contact = () =>{
-    return(
+import Footer from "../components/home_components/footer"
+import Header from "../components/home_components/header"
+import ContactBody from "../components/contact_components/ContactBody"
+import Banner from "../components/contact_components/Banner"
+
+const Contact = () => {
+    return (
         <div>
-            This is Contact Page
+            <Header />
+            <Banner />
+            <ContactBody />
+            <Footer />
         </div>
     )
 }
