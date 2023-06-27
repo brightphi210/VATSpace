@@ -1,0 +1,154 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-family: Lato;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --small-font: 14px;
+    --big-font:80px;
+    --medium-font:40px;
+    --icon-size: 20px;
+    --main-font:'Syne', sans-serif;
+
+
+
+    --white-color:white;
+    --white-grey:rgb(248, 248, 248);
+    --blue-color:#017EFE;
+    --red-color:#e40a0a;
+    --yello-color:#ffbd09;
+    --green-color:#0c942e;
+    --black-color:black;
+    --dark-blue-color: #0c5aa7;
+
+}
+
+
+/* =================== sidebar_left ============ */
+
+.dashboard_flex{
+    display: flex;
+}
+
+.sidebar_left{
+    background-color: var(--black-color);
+    height: 100vh;
+    padding: 40px;
+    color: var(--white-color);
+    position: fixed;
+}
+
+.logo_flex{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    gap: 40px;
+    cursor: pointer;
+}
+
+
+.logo_flex img{
+    width: 150px;
+}
+
+.logo_flex .close{
+    background-color: var(--white-color);
+    padding: 3px 5px;
+    border-radius: 10px;
+    color: var(--black-color);
+}
+
+.sidebar_left p{
+    color: rgb(185, 185, 185);
+    padding-top: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.hr{
+    border: rgb(80, 80, 80) 1px solid;
+}
+
+.sidebar_left span{
+    display: block;
+    padding-top: 30px;
+    color: gray;
+    font-size: 14px;
+}
+
+.sidebar_left button{
+    display: block;
+    padding: 13px 40px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: none;
+    background-image: linear-gradient(45deg, #017EFE, rgb(12, 203, 200));
+    color: var(--white-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.manage_listing li{
+    display: block;
+    padding-top: 25px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.manage_listing li:hover{
+    color: rgb(127, 208, 255);
+    transition: all ease-in-out 0.5s;
+}
+
+.manage_listing .list_icons{
+    font-size: 16px;
+}
+
+.profile_flex{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.profile_flex img{
+    width: 38px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+/* ======================= sidebar_right ============ */
+.sidebar_right{
+    background-color:aliceblue;
+    height: 100vh;
+    width: 100%;
+    margin-left: 300px;
+}
+
+.dash_nav_bar{
+    background-color: #fdfdfd;
+    width: 100%;
+    padding: 10px;
+}
+
+.dash_nav_icon{
+    text-align: right;
+    padding: 10px;
+    padding-right: 50px;
+}
+
+
+.dash_nav_icon .icons{
+    padding-left: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}

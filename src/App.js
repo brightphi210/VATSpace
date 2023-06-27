@@ -6,6 +6,8 @@ import Contact from "./pages/contact";
 import Service from "./pages/service";
 
 
+import Dashboard from "./pages/dashboard";
+
 import SinglePhysicalProduct from "./pages/singlePhysicalProduct";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -23,8 +25,9 @@ function App() {
         <Route path="contact" element={<Contact />} />
 
         <Route path={"physical"} element={<Physical />}></Route>
-        
         <Route path="singlePhysicalProduct" element={<SinglePhysicalProduct />} />
+
+        <Route path={"dashboard"} element={<Dashboard />}></Route>
       </Routes>
     </BrowserRouter>
     </div>
