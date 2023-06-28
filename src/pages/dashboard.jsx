@@ -1,11 +1,11 @@
 
 import "./CSS/dashboard.css"
-import SideBar from "../components/dashboard_components/sidebar"
+import HomeDashboard from "../components/dashboard_components/home_dashboard"
 
 const Dashboard = () =>{
     return(
         <div>
-            <SideBar />
+            <HomeDashboard />
         </div>
     )
 }

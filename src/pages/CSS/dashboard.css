@@ -2,8 +2,9 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Poppins;
+
     font-family: Lato;
+    font-family: Poppins;
     box-sizing: border-box;
     text-decoration: none;
 }
@@ -38,9 +39,10 @@
 .sidebar_left{
     background-color: var(--black-color);
     height: 100vh;
-    padding: 40px;
+    padding: 50px;
     color: var(--white-color);
     position: fixed;
+    padding-top: 80px;
 }
 
 .logo_flex{
@@ -50,6 +52,7 @@
     gap: 40px;
     cursor: pointer;
 }
+
 
 
 .logo_flex img{
@@ -97,11 +100,13 @@
 }
 
 
+
 .manage_listing li{
     display: block;
-    padding-top: 25px;
+    padding-top: 20px;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 13px;
+    color: var(--white-color);
 }
 
 .manage_listing li:hover{
@@ -128,22 +133,24 @@
 
 /* ======================= sidebar_right ============ */
 .sidebar_right{
-    background-color:aliceblue;
-    height: 100vh;
+    background-color:rgb(254, 254, 254);
+    height: 100%;
     width: 100%;
-    margin-left: 300px;
+    margin-left: 280px;
+    padding-top: 50px;
 }
 
 .dash_nav_bar{
     background-color: #fdfdfd;
+    z-index: 1;
     width: 100%;
-    padding: 10px;
+    padding: 15px 6%;
+    position: fixed;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .dash_nav_icon{
     text-align: right;
-    padding: 10px;
-    padding-right: 50px;
 }
 
 
@@ -151,4 +158,445 @@
     padding-left: 10px;
     margin-left: 20px;
     cursor: pointer;
+}
+
+
+.greeting_flex{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 30px 10%;
+    align-items: center;
+}
+
+.greeting_flex input{
+    width: 100%;
+    padding: 15px 20px;
+    padding-left: 50px;
+    border-radius: 10px;
+    outline: none;
+    border: rgb(213, 213, 213) solid 1px;
+    font-size: 15px;
+}
+
+.greeting_flex input{}
+
+
+.greeting_flex h4{
+    font-size: 15px;
+}
+.greeting_flex p{
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.search_div{
+    position: relative;
+}
+
+.search{
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+
+/* ======================  dash_middle_part  ================== */
+
+.dash_middle_part{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 15px 10%;
+    grid-gap: 30px;
+}
+.dash_cards_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.dash_cards{
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.dash_cards .uil{
+    font-size: 25px;
+}
+
+.dash_cards h4{
+    padding-top: 12px;
+}
+
+
+.dash_cards h2{
+    font-size: 40px;
+    padding-top: 8px;
+}
+.one{
+    background-color: #1086FF;
+
+}
+
+.two{
+    background-color: #FF7676;
+}
+
+.three{
+    background-color: #0EC6BB;
+}
+
+.four{
+    background-color: #FFB905;
+}
+
+
+/* ================== maintenance ============ */
+
+.maintenance{
+    border: none;
+    text-align: center;
+    padding: 50px;
+    margin-top: 40px;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 20px;
+
+}
+
+.maintenance h3{
+    padding-bottom: 12px;
+    font-size: 22px;
+}
+
+.maintenance p{
+    padding-bottom: 12px;
+    color: grey;
+}
+
+.maintenance button{
+    padding: 15px 40px;
+    background-color: #017EFE;
+    border-radius: 10px;
+    border: none;
+    color: var(--white-color);
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.maintenance button:hover{
+    background-color: var(--dark-blue-color);
+    transition: all ease-in-out 0.5s;
+}
+
+
+/* ================= dash_middle_right ============= */
+
+.dash_middle_right{
+    
+
+}
+
+
+.booked_button{
+    display: flex;
+    gap: 80px;
+    padding: 0 10px;
+    padding-bottom: 5px;
+    align-items: center;
+}
+
+.booked_button p{
+    color: grey;
+    font-size: 13px;
+}
+
+.booked_button button{
+    padding: 10px 25px;
+    border: none;
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: rgb(232, 232, 232) solid 1px;
+}
+
+.image_div{
+    border: rgb(252, 125, 125) solid 1px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.image_div img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.image_div h4{
+    font-size: 14px;
+}
+
+.image_div span{
+    font-size: 13px;
+    color: grey;
+}
+
+.image_div_desc{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.image_div_desc img{
+    width: 10%;
+}
+
+.desc_span{
+    display: flex;
+    gap: 30px;
+    color: grey;
+}
+
+
+.buy_now{
+    display: flex;
+    gap: 30px;
+    padding-left: 30px;
+}
+
+.buy_now button{
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.buy_now button:hover{
+    background-color: var(--dark-blue-color);
+    transition: all ease-in-out 0.5s;
+}
+
+
+.booked_div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+/* =================== appoint_div ================= */
+
+.appoint_div{
+    padding-top: 10px;
+}
+
+.appoint_flex{
+    display: flex;
+    gap: 70px;
+    margin: 0 30px;
+}
+
+.appoint_flex h4{
+    font-size: 13px;
+}
+
+
+/* ================= appoint_image ============== */
+
+
+.appoint_image_div{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    margin: 20px;
+    margin-top: 0;
+}
+
+.appoint_image{
+    padding: 10px 30px;
+    border: rgb(192, 192, 192) solid 1px;
+    border-radius: 10px;
+    padding-top: 20px;
+
+}
+    
+.appoint_image img{
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+}
+
+.appoint_desc{
+    background-color: var(--white-color);
+    padding: 6px;
+    padding-top: 12px;
+    border-radius: 10px;
+    border: rgb(186, 186, 186) solid 1px;
+}
+
+.bell{
+    background-color: var(--white-color);
+    padding: 6px 8px;
+    border-radius: 10px ;
+}
+
+/* =============== appoint_profile =========== */
+
+.appoint_profile{
+    display: flex;
+    gap: 25px;
+    padding-top: 10px;
+}
+
+.appoint_profile h4{
+    font-size: 13px;
+}
+
+
+.appoint_profile p{
+    font-size: 13px;
+}
+
+.appoint_profile img{
+    width: 15%;
+}
+
+
+
+/* ================== maintenance ============== */
+
+.maintainance_modal_div{
+    position: relative;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.maintainance_modal{
+    background-color: var(--white-color);
+    background-color: #fefefe;
+    padding: 30px;
+    border: 1px solid #888;
+    top: 0;
+    right: 0;
+    height:100vh;
+    width: 500px; 
+    position: absolute;
+}
+
+.choose_close{
+    display: flex;
+    padding: 30px 5%;
+}
+
+.choose_close h3{
+    font-size: 18px;
+}
+
+.uil-times{
+    font-size: 15px;
+    cursor: pointer;
+    background-color: var(--white-color);
+    padding: 5px 7px;
+    border-radius: 50%;
+    color: var(--black-color);
+    border: rgb(209, 209, 209) solid 1px;
+    position: absolute;
+    right: 50px;
+}
+
+
+.comp_div{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding: 30px 5%;
+    grid-gap: 30px;
+    background-color: var(--white-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 20px;
+}
+
+
+
+.comp_div img{
+    width: 100%;
+}
+
+.comp_div p{
+    padding-left: 40px;
+}
+
+
+.rate{
+    padding-left: 5px;
+    font-size: 13px;
+    color: goldenrod;
+}
+
+.comp_div_button button:first-child{
+    background-color: var(--blue-color);
+    padding: 10px 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.comp_div_button button:first-child:hover{
+    transition: all ease-in-out 0.5s;
+    background-color: var(--dark-blue-color);
+}
+
+
+.comp_div_button button:last-child{
+    background-color: var(--white-color);
+    padding: 8px 10px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border: rgb(218, 218, 218) solid 1px;
+    border-radius: 10px;
+    color: var(--black-color);
+}
+
+
+.seemore{
+    text-align: center;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 13px;
+    border-radius: 10px;
+    background-color: var(--blue-color);
+    border: none;
+    color: var(--white-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.seemore:hover{
+    background-color: var(--dark-blue-color);
+    transition: all ease-in-out 0.5s;
 }
